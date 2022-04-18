@@ -7,17 +7,17 @@ translation_of: Web/API/HTMLImageElement/srcset
 
 <p><span class="seoSummary">{{domxref("HTMLImageElement")}} 的 <code><strong>srcset</strong></code> 的值是一个字符串，用来定义一个或多个图像候选地址，以 <code>,</code>分割，每个候选地址将在特定条件下得以使用。候选地址</span>包含图片 URL 和一个可选的宽度描述符和像素密度描述符，该候选地址用来在特定条件下替代原始地址成为 {{domxref("HTMLImageElement.src", "src")}}  的属性。</p>
 
-<p>The <code>srcset</code> property, along with the {{domxref("HTMLImageElement.sizes", "sizes")}} property, are a crucial component in designing responsive web sites, as they can be used together to make pages that use appropriate images for the rendering situation.</p>
+<p><code>srcset</code>属性和{{domxref("HTMLImageElement.sizes", "sizes")}} 属性是设计响应式网站的关键组件，可以搭配使用来制作满足多种呈现需求的页面。</p>
 
-<h2 id="Syntax">Syntax</h2>
+<h2 id="Syntax">语法</h2>
 
 <pre class="syntaxbox"><em>htmlImageElement</em>.srcset = <em>imageCandidateStrings</em>;
 let <em>srcset</em> = <em>htmlImageElement</em>.srcset;
 </pre>
 
-<h3 id="Value">Value</h3>
+<h3 id="Value">值</h3>
 
-<p>A {{domxref("USVString")}} containing a comma-separated list of one or more image candidate strings to be used when determining which image resource to present inside the {{HTMLElement("img")}} element represented by the <code>HTMLImageElement</code><em>.</em></p>
+<p>一个包含一个或多个逗号分隔的图像候选列表的{{domxref("USVString")}}，用于确定 <code>HTMLImageElement</code> 代表的 {{HTMLElement("img")}}元素中显示哪个图像资源。</p>
 
 <p>Each image candidate string must begin with a valid URL referencing a non-interactive graphic resource. This is followed by a comma (<code>,</code>) character and then a condition descriptor that indicates the circumstances in which the indicated image should be used. Space characters, other than the whitespace separating the URL and the corresponding condition descriptor, are ignored; this includes both leading and trailing space, as well as space before or after each comma.</p>
 
